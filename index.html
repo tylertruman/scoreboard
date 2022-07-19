@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Scoreboard</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- stylesheet link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <style>
+      body.debug .container,
+      body.debug .container-fluid {
+        outline: 2px double blue;
+        outline-offset: -2px;
+      }
+    
+      body.debug .row {
+        outline: 2px dashed red;
+        outline-offset: -2px;
+      }
+    
+      body.debug [class*="col-"] {
+        outline: 2px dotted forestgreen;
+        outline-offset: -3px;
+      }
+    </style> -->
+  </head>
+  <body class="debug hero-img">
+
+    <header class="container-fluid ">
+        <div class="row">
+            <div class="col-2 offset-10 p-1 text-center">
+                <button class="btn btn-danger m-2 text-shadow" id="reset-score" onclick="resetScore()">Reset</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="row main-card rounded align-content-center text-shadow pb-5 ">
+            <div class="col-3 offset-2 text-center text-light pb-1 font-med">HOME</div>
+            <div class="col-3 offset-2 text-center text-light font-med">AWAY</div>
+            
+            <div class="col-3 offset-2 p-5 score-card rounded">
+                <div class="">
+                    <div class="text-center text-light score font-big" id="home-score">0</div>
+                </div>
+
+            </div>
+            <div class="col-3 offset-2 p-5 score-card rounded">
+                <div class="text-center text-light score font-big " id="away-score">0</div>
+
+            </div>
+            
+        
+        </div>
+        
+
+    </main>
+
+    <section class="container">
+        <div class="row text-center pt-2">
+        <div class="col-3 offset-2 p-3">
+            <button class="btn btn-color btn-outline-dark fs-5 text-shadow" id="home-plus-one" onclick="homePlusOne()">HOME +1</button>
+        </div>
+        <div class="col-3 offset-2 p-3">
+            <button class="btn btn-color btn-outline-dark fs-5 text-shadow" id="away-plus-one" onclick="awayPlusOne()">AWAY +1</button>
+        </div>
+
+        <div class="col-3 offset-2 p-3">
+            <button class="btn btn-color btn-outline-dark fs-5 text-shadow" id="home-plus-three" onclick="homePlusThree()">HOME +3</button>
+        </div>
+        <div class="col-3 offset-2 p-3">
+            <button class="btn btn-color btn-outline-dark fs-5 text-shadow" id="away-plus-three" onclick="awayPlusThree()">AWAY +3</button>
+        </div>
+        </div>
+    </section>
+
+
+
+
+      
+
+    <!-- JavaScript Link -->
+    <script src="app.js"></script>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  </body>
+</html>
